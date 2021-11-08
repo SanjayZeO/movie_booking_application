@@ -48,6 +48,8 @@ class MovieFilter extends React.Component{
   renderInside = (item) =>{
     return this.state[item].length > 1 ? this.state[item].join(", ") : this.state[item];
   }
+
+  //render
   render(){
     let theme = createTheme();
     let titleColor = theme.palette.primary.light;
